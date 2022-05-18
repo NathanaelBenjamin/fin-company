@@ -1,4 +1,3 @@
-import { hover } from '@testing-library/user-event/dist/hover'
 import styled from 'styled-components'
 
 export const AdminDashBoardContainer = styled.div`
@@ -7,11 +6,14 @@ export const AdminDashBoardContainer = styled.div`
     // justify-content :space-around;
     background-color:white;
    
-
     .sideBar{
         height:100vh;
         background-color: black;
         color:white;
+        position:fixed;
+        top:0%;
+        left:0%;
+        z-index:5;
         width:250px;
         display:flex;
         flex-direction:column;
@@ -27,6 +29,7 @@ export const AdminDashBoardContainer = styled.div`
             left:${({click}) =>(click ? 0:'-100%')};
             transition:all 3s ease-in-out;
             opacity:0.93;
+            z-index:5;
         }
     }
     .logOutWrapper{
@@ -53,6 +56,8 @@ export const AdminDashBoardContainer = styled.div`
             font-size:30px;
             width:100%;
             height:50px;
+            position:fixed;
+            z-index:5;
         }
     }
     .productContainer{
@@ -131,8 +136,6 @@ export const AdminDashBoardContainer = styled.div`
         width:120px;
         }
     }
-    
-
     .clientContainer{
         display:flex;
         justify-content:space-around;
@@ -155,6 +158,26 @@ export const AdminDashBoardContainer = styled.div`
         color:black;
         border-radius:5px;
         width:120px;
+        }
+    }
+    .dashWelcome{
+        margin-top:15px;
+        font-weight:bolder;
+    }
+    .colorYellow{
+        color:#ffc107;
+    }
+    .dashPara{
+        padding-top:10px;
+    }
+    .rooo{
+        margin-left:260px;
+        @media screen and (max-width:768px){
+            margin-left:10%;
+            padding-top:50px;
+        }
+        @media screen and (max-width:575px){
+            margin-left:0px;
         }
     }
 `

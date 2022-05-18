@@ -11,10 +11,10 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import Logout from './images/logout.svg';
 import Menu from './images/menu.svg';
-import { Dashboard } from '../Dashboard/Dashboard';
-import {Client} from '../../components/Dashboard/Client/Client'
-import {Product} from '../../components/Dashboard/Product/Product'
-import {Team} from '../../components/Dashboard/Team/Team'
+import  Dashboard  from '../Dashboard/Dashboard';
+import Client from '../../components/Dashboard/Client/Client'
+import Product from '../../components/Dashboard/Product/Product'
+import TeamMembers from '../../components/Dashboard/Team/Team'
 
 function AdminDashBoard () {
     // const [click, setClick]=useState(false)
@@ -52,7 +52,7 @@ function AdminDashBoard () {
         // onClick={handleClick} click={click}
         >
             <div className='dashBoardTop' >
-                <h3>Welcome</h3>
+                <p className='dashWelcome'>Welcome, <span className='colorYellow'>{userDetails.displayName}</span></p>
                 <Link style={linkStyle} to="/dashboard">
                     <div 
                         className={path.includes("dashboard") || path==="dashboard"
@@ -61,7 +61,7 @@ function AdminDashBoard () {
                         onClick={()=>changePathAndClose("dashboard") }
                         >
                         <AiIcons.AiFillHome/>
-                        <p> Dashboard</p>
+                        <p className='dashPara'> Dashboard</p>
                     </div>
                 </Link>
                 <Link style={linkStyle} to="/client">
@@ -72,7 +72,7 @@ function AdminDashBoard () {
                         onClick={()=>changePathAndClose("client") }
                         >
                         <IoIcons.IoIosPaper/>
-                        <p>Our Clients</p>
+                        <p className='dashPara'>Our Clients</p>
                     </div>
             </Link>
             <Link style={linkStyle} to="/team">
@@ -83,7 +83,7 @@ function AdminDashBoard () {
                     onClick={()=>changePathAndClose("team") }
                     >
                     <IoIcons.IoMdPeople/>
-                    <p> Team Members</p>
+                    <p className="dashPara"> Team Members</p>
                 </div>
             </Link>
             <Link style={linkStyle} to="/product">
@@ -94,14 +94,16 @@ function AdminDashBoard () {
                     onClick={()=>changePathAndClose("product") }
                     >
                     <FaIcons.FaCartPlus/>
-                    <p> Products</p>
+                    <p className='dashPara'> Products</p>
                 </div>
             </Link>
             </div>
+            <Link to ='/auth' style={linkStyle}>
                 <div className='logOutWrapper'>
                     <img src={Logout} alt="icon" />
-                    <p>Logout</p>
+                    <p className='dashPara'>Logout</p>
                 </div>
+            </Link>
         </div>
         <div>
           {/* <div className='mobileIcons' onclick={handleClick}>
@@ -110,17 +112,16 @@ function AdminDashBoard () {
             <Container>
                 <div className="mobileNav">
                     <img src={Menu} alt="menu"  className="bugger" 
-                        onClick={()=>openNav()}/>
-                    <p>Side Hustle Finance</p>  
+                        onClick={()=>openNav()}/> 
                 </div>   
             </Container> 
-                <div>
+                <div className="rooo">
                     <Routes>
                         <Route path="/" element={<Navigate to="/dashboard" />}/>
                         <Route path="/dashboard" element={<Dashboard />} />
                         <Route path="/client" element={<Client />} />
                         <Route path="/product" element={<Product />} />
-                        <Route path="/team" element={<Team/>} />
+                        <Route path="/team" element={<TeamMembers/>} />
                     </Routes>
                 </div>
         </div>
@@ -130,5 +131,5 @@ function AdminDashBoard () {
 export default AdminDashBoard
 
 const Container=styled.div`
-// color:black;
+
 `
