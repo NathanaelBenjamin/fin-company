@@ -16,10 +16,10 @@ const Client = () => {
   console.log(clients)
   return (
     <div className='clients'>
-        <div className='client-container'>
-          <div className='header'>
+      <div className='header'>
             <h2>Clients</h2>
           </div>
+        <div className='client-container'>
         <table>
               <tr>
                   <th>Fullname</th>
