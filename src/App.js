@@ -1,8 +1,13 @@
 import React from 'react'
+import Client from './components/Dashboard/Client/Client'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Client/>
+    </div>
+
+    
   )
 }
 

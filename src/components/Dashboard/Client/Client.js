@@ -1,7 +1,54 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import './Client.css'
 
-export const Client = () => {
+const Client = () => {
+
+  /* Use state*/
+  const [clients, setClients] = useState([])
+
+  useEffect(()=>{
+    fetch('https://fakerapi.it/api/v1/companies?_quantity=20')
+    .then(response => response.json())
+    .then(data => setClients(data.data))
+
+  }, [])
+
+  console.log(clients)
   return (
-    <div>Client</div>
+    <div className='clients'>
+        <div className='client-container'>
+          <div className='header'>
+            <h2>Clients</h2>
+          </div>
+        <table>
+              <tr>
+                  <th>Fullname</th>
+                  <th>Email</th>
+                  <th>Phone number</th>
+                  <th>gender</th> 
+              </tr>
+               {
+                 clients ? clients.map((client, idx) => (
+                  < tr key={idx}>
+                  <td>
+                    <p>
+                      <span>{client.contact.firstname }{client.contact.lastname}</span>
+                      <span></span>
+                    </p>
+                   </td>
+                  <td>{client.email}</td>
+                  <td>{client.phone}</td>
+                  <td>{client.contact.gender}</td>
+              </tr>
+                 ) ) : null
+               }
+              
+                
+      </table>
+        </div>
+      
+    </div>
   )
 }
+
+export default Client
