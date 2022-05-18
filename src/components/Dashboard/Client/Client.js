@@ -32,7 +32,7 @@ const Client = () => {
                   < tr key={idx}>
                   <td>
                     <p>
-                      <span>{client.contact.firstname }</span>
+                      <span>{client.contact.firstname}</span>
                       <span>{client.contact.lastname}</span>
                     </p>
                    </td>
