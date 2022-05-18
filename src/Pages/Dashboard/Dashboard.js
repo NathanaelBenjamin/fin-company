@@ -1,7 +1,7 @@
 import React from 'react';
 import TeamMembers
-  from '../components/Dashboard/Team/Team';
-import Product from '../components/Dashboard/Product/Product';
+  from '../../components/Dashboard/Team/Team'
+import Product from '../../components/Dashboard/Product/Product';
 function Dashboard() {
   let userDetails = JSON.parse(sessionStorage.getItem('userDetails'))
   return (

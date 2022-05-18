@@ -64,4 +64,4 @@ const TeamMembers = () => {
   )
 }
 
-export default TeamMembers
+export default TeamMembers;
