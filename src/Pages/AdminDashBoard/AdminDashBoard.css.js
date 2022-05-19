@@ -171,14 +171,11 @@ export const AdminDashBoardContainer = styled.div`
         padding-top:10px;
     }
     .rooo{
-        margin-left:260px;
-        @media screen and (max-width:768px){
-            margin-left:10%;
-            padding-top:50px;
+        @media screen and (min-width:768px){
+            
+            margin-left:260px;
         }
-        @media screen and (max-width:575px){
-            margin-left:0px;
-        }
+      
     }
 `
 export  const linkStyle={
