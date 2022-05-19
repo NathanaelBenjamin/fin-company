@@ -112,7 +112,8 @@ function AdminDashBoard () {
             <Container>
                 <div className="mobileNav">
                     <img src={Menu} alt="menu"  className="bugger" 
-                        onClick={()=>openNav()}/> 
+                        onClick={()=>openNav()}/>
+                    {/* <p className="mobileHead">Managee</p>  */}
                 </div>   
             </Container> 
                 <div className="rooo">

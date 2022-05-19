@@ -21,13 +21,13 @@ export const AdminDashBoardContainer = styled.div`
         justify-content:space-between;
         border-radius:0px 30px 30px 0px ;
         @media screen and (max-width:768px){
-            position:absolute;
+            position:fixed;
             background:black;
             height:100vh;
             width:50%;
             top:0px; 
-            left:${({click}) =>(click ? 0:'-100%')};
-            transition:all 3s ease-in-out;
+            // left:${({click}) =>(click ? 0:'-100%')};
+            transition:all 1s ease-in-out;
             opacity:0.93;
             z-index:5;
         }
@@ -57,7 +57,7 @@ export const AdminDashBoardContainer = styled.div`
             width:100%;
             height:50px;
             position:fixed;
-            z-index:5;
+            z-index:9;
         }
     }
     .productContainer{
@@ -161,7 +161,7 @@ export const AdminDashBoardContainer = styled.div`
         }
     }
     .dashWelcome{
-        margin-top:15px;
+        margin-top:40px;
         font-weight:bolder;
     }
     .colorYellow{
@@ -172,10 +172,19 @@ export const AdminDashBoardContainer = styled.div`
     }
     .rooo{
         @media screen and (min-width:768px){
-            
             margin-left:260px;
         }
-      
+        @media screen and (max-width:768px){
+            padding-top:50px;
+        } 
+    }
+    .bugger{
+        background-color:#ffc107;
+        z-index:9;
+    }
+    .mobileHead{
+        font-weight:bolder;
+        color:yellow;
     }
 `
 export  const linkStyle={
