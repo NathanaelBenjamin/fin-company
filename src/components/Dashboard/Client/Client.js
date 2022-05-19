@@ -5,7 +5,6 @@ const Client = () => {
 
   /* Use state*/
   const [clients, setClients] = useState([])
-
   useEffect(()=>{
     fetch('https://fakerapi.it/api/v1/companies?_quantity=20')
     .then(response => response.json())
@@ -13,7 +12,7 @@ const Client = () => {
 
   }, [])
 
-  console.log(clients)
+  // console.log(clients)
   return (
     <div className='clients'>
       <div className='header'>

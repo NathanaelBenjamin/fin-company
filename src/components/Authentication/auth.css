@@ -1,0 +1,48 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+form {
+    width: 25rem;
+}
+
+h1 {
+    color:
+        #f8d25f
+}
+
+.forms {
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40rem;
+    display: flex;
+
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 5px 15px;
+    height: 2rem;
+    border: 0.1rem solid #C4C4C4;
+    border-radius: 0.2rem;
+}
+
+button {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #f8d25f
+}
+
+button:hover {
+    background-color: white;
+    border: solid 0.1rem black;
+    transition: ease-in-out 0.5s;
+}

@@ -1,64 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-  
+
 }
 
 
 /*Customers*/
-.clients{
-    border: 1px solid red;
-    width: 100vw;
+.Team {
+
+
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    margin-top: 0px;
+    justify-content: center;
+
+
 }
 
-.client-container {
-    border: 1px solid #B5B5B5;
-    width: 100%;
-    /* height: 100%; */
-    margin:0px auto;
+.team-container {
+
+    width: 90%;
+
+    margin: 0px auto;
+
     box-sizing: border-box;
     box-shadow: 6px 4px 38px 4px rgba(0, 0, 0, 0.02);
     border-radius: 0.5rem;
-    /* padding: 1rem 0; */
+    padding: 2rem 0;
 }
-.clients .header{
-    /* border: 1px solid red; */
+
+.team-container .header {
+
     width: 400px;
-    margin: 0 5px;
 }
-.clients .header h2{
-    font-size: 2.0rem;
+
+.teams-container .header h2 {
+    font-size: 2.2rem;
     font-family: 'Poppins';
-    padding: 2px 0;
+    padding: 10px 0;
     text-transform: uppercase;
-    font-weight: 500;
 }
-.client-container  table{
-    border: 1px solid #B5B5B5;
+
+.teams-container table {
+    /* border: 1px solid black; */
     width: 100%;
     border-collapse: collapse;
     box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.2);
     overflow: auto;
-  
-  
-}
-.client-container  table tr{
-    /* width: 100%; */
-    border-bottom: 0.75px solid #B5B5B5;
-    color: #0F123F;
-    font-size: 1em;
-    /* border-radius: 7px; */
-    
+
+
 
 }
-.client-container  table th{
-    padding: 17px 0;
+
+.teams-container table tr {
+
+    border-bottom: 0.75px solid #B5B5B5;
+    font-size: 1em;
+    padding: 2rem auto;
+
+}
+
+.teams-container table th {
+    padding: 15px 0;
     border: 1px solid #ddd;
     background: #f8d25f;
     color: white;
@@ -66,66 +71,72 @@
     position: sticky;
     top: 0;
     font-weight: 400;
-    text-align:center;
-    
+    text-align: center;
 }
-.client-container table tr td{
+
+.teams-container table tr td {
     /* border: 1px solid #ddd; */
-    padding: 17px 35px;
+    padding: 1rem 45px;
     color: black;
     text-align: center;
 
 }
 
-.client-container table tr:nth-child(even){
+.teams-container table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-.client-container table tr:hover{
+
+.teams-container table tr:hover {
     background-color: #ddd;
     transition: all 0.25s ease;
     cursor: pointer;
 }
 
- ::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 5px;
 }
-::-webkit-scrollbar-track{
-  box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.3) ;
-}
-::-webkit-scrollbar-thumb{
-  box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.3) ;
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-/*Media Queries*/
-@media screen and (max-width:960px){
-    th{
-        display:none;
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width:960px) {
+    th {
+        display: none;
     }
-    td{
+
+    td {
         display: block;
     }
-    td:first-child{
+
+    td:first-child {
         background: #f8d25f;
     }
 
-    td:nth-child(2)::before{
+    td:nth-child(2)::before {
         content: "Email";
     }
 
-    td:nth-child(3)::before{
+    td:nth-child(3)::before {
         content: "Phone";
     }
 
-    td:nth-child(4)::before{
+    td:nth-child(4)::before {
         content: "Gender";
     }
-    td{
+
+    td {
         text-align: right;
     }
-    td::before{
+
+    td::before {
         float: left;
         margin-right: 3rem;
         font-weight: 600;
     }
-  
+
 }
