@@ -9,8 +9,10 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Auth from './components/Authentication/auth';
 
 
+
 const App = () => {
   return (
+<<<<<<< HEAD
 
     <div>
       {/* <Globalstyle/> */}
@@ -24,6 +26,12 @@ const App = () => {
     </div>
 
   );
+=======
+    <div>
+    
+    </div>
+  )
+>>>>>>> 311ffe7022ca6121706c0c2cec5913f69d1d5560
 }
 
 
