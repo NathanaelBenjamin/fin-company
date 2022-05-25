@@ -5,7 +5,7 @@
 
 }
 
-form {
+/* form {
     width: 25rem;
 }
 
@@ -14,14 +14,25 @@ h1 {
         #f8d25f
 }
 
+.side {
+    height: 100%;
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .forms {
+    background-color: #f8d25f;
+    background-image: linear-gradient(rgb(207, 180, 97), rgb(214, 182, 85, 0.3));
     align-items: center;
     width: 100%;
     box-sizing: border-box;
     height: 40rem;
     display: flex;
-
-    justify-content: center;
+    padding-right: 10rem;
+    justify-content: space-between;
 }
 
 input {
@@ -45,4 +56,4 @@ button:hover {
     background-color: white;
     border: solid 0.1rem black;
     transition: ease-in-out 0.5s;
-}
+} */
