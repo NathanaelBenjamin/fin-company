@@ -5,8 +5,9 @@
 
 }
 
-form {
+.forms {
     width: 25rem;
+    padding: 2rem 3rem;
 }
 
 h1 {

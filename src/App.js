@@ -1,7 +1,7 @@
 import React from 'react';
 //import GlobalStyle from './components/GlobalStyle'
-import { Routes, Route} from "react-router-dom";
-import  AdminDashBoard  from './Pages/AdminDashBoard/AdminDashBoard'
+import { Routes, Route } from "react-router-dom";
+import AdminDashBoard from './Pages/AdminDashBoard/AdminDashBoard'
 import SignUp from './components/Authentication/SignUp'
 // import Dashboard from './Pages/Dashboard'
 import Home from './Pages/Home';
